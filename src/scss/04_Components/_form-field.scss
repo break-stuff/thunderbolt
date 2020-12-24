@@ -1,0 +1,15 @@
+@import '../00_Abstracts/index.scss';
+
+.inline-form {
+    display: flex;
+    align-items: flex-end;
+    
+    .ks-form-field {
+        .form-input {
+            height: 41px;
+            @include b($size: xxs, $color: light, $variant: darker);
+            @include br-r(none);
+            @include b-r(none);
+        }
+    }
+}

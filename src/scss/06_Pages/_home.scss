@@ -1,0 +1,30 @@
+@import '../00_Abstracts/index.scss';
+
+.main-hero {
+    overflow: hidden;
+    height: 600px;
+
+    @include mq(sm) {
+        height: 400px;
+    }
+
+    @include mq(xs) {
+        height: 300px;
+    }
+
+    ks-img {
+        display: block;
+    }
+}
+
+.products {
+    .ks-card {
+        .card-content {
+            align-items: flex-start;
+
+            @include mq(sm) {
+                align-items: center;
+            }
+        }
+    }
+}

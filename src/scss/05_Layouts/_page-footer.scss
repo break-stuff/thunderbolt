@@ -1,0 +1,21 @@
+@import '../00_Abstracts/index.scss';
+
+.page-footer {
+    .footer-policy {
+        @include bg-color(dark, dark);
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .ks-form-field {
+            .form-input {
+                height: 2.75rem;
+                @include p(sm);
+                @include bg-color(dark);
+                @include b($color: light);
+            }
+        }
+    }
+}

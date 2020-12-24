@@ -1,0 +1,27 @@
+{
+	"name": "thunderbolt_gulp",
+	"version": "0.1.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "cross-env NODE_ENV=development gulp dev",
+		"build": "cross-env NODE_ENV=production gulp build"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.1.0",
+		"cross-env": "^7.0.3",
+		"cssnano": "^4.1.10",
+		"gulp": "^4.0.2",
+		"gulp-postcss": "^9.0.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-webserver": "^0.9.1",
+		"postcss": "^8.2.1"
+	},
+	"dependencies": {
+		"kickstand-ui": "^2.1.1"
+	}
+}

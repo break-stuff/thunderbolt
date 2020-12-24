@@ -1,0 +1,8 @@
+@import '../00_Abstracts/index.scss';
+
+.ks-card {
+    overflow: visible;
+    @include b(none);
+    @include br(none);
+    @include shadow(none);
+}
