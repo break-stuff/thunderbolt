@@ -7,7 +7,7 @@ const webserver = require("gulp-webserver");
 const sourcemaps = require("gulp-sourcemaps");
 
 function localServer() {
-    return src(".").pipe(
+    return src("./dist").pipe(
         webserver({
             livereload: true,
             directoryListing: false,
@@ -25,18 +25,26 @@ function css() {
 }
 
 function js() {
-    return src('./src/scripts/main.js')
+    return src('./src/scripts/index.js')
+        .pipe(dest('./dist'));
+}
+
+function html() {
+    return src('./index.html')
         .pipe(dest('./dist'));
 }
 
 exports.dev = function() {
     localServer();
+    html();
     css();
     js();
     watch("./src/scss/**/*.scss", css);
+    watch("./src/scripts/**/*.js", js);
+    watch("./index.html", html);
 };
 
 exports.build = function(done) {
-    series(css, js);
+    series(html, css, js);
     done();
 };
