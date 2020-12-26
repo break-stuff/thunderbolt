@@ -36,17 +36,26 @@ function html() {
         .pipe(dest('./dist'));
 }
 
+function assets() {
+    return src('./src/assets/**/*')
+        .pipe(dest('./dist/assets'))
+}
+
 exports.dev = function() {
     localServer();
     html();
     css();
     js();
+    assets();
     watch("./src/scss/**/*.scss", css);
     watch("./src/scripts/**/*.js", js);
     watch("./index.html", html);
 };
 
 exports.build = function(done) {
-    series(html, css, js);
+    html();
+    css();
+    js();
+    assets();
     done();
 };
