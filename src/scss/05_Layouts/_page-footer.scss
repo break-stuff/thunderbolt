@@ -1,12 +1,14 @@
 @import '../00_Abstracts/index.scss';
 
-.page-footer {
+.page-footer {    
     .footer-policy {
-        @include bg-color(dark, dark);
-
         a {
             color: white;
             text-decoration: none;
+
+            @include hover-focus {
+                text-decoration: underline;
+            }
         }
 
         .ks-form-field {
@@ -14,7 +16,7 @@
                 height: 2.75rem;
                 @include p(sm);
                 @include bg-color(dark);
-                @include b($color: light);
+                @include b($color: light, $variant: darker);
             }
         }
     }

@@ -1,57 +1,29 @@
 @import '../00_Abstracts/index.scss';
 
 .page-header {
-    background-color: white;
     @include z-index(sm);
 
     .top-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        @include m(auto);
-        @include py(xs);
-        @include px(lg);
-
         .brand {
-            @include m(sm);
-
             a {
-                @include mr(xl);
                 @include font(accent);
-                @include font-size(lg);
-                @include color(primary);
             }
         }
 
         .site-search {
-            width: 100%;
             max-width: 450px;
         }
 
         .util-links {
-            display: flex;
-            align-items: center;
-            @include py(sm);
-
-            a {
-                @include px(sm);
-            }
-
             a+a {
-                @include b-l($size: xxxs);
+                @include b-l($size: xxxs, $color: light, $variant: darker);
             }
         }
     }
 
     .bottom-nav {
-        display: flex;
-        justify-content: center;
-        background-color: white;
-        @include b-t($size: xxs);
         @include transition(transform);
         @include z-index(sub);
-        @include shadow(sm);
 
         &.hide-nav {
             transform: translateY(-100%);
@@ -66,12 +38,6 @@
                     text-shadow: none;
                     @include color(primary);
                 }
-            }
-
-            > a {
-                @include font-size(xs);
-                @include py(md);
-                @include mx(md);
             }
         }
     }
