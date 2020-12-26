@@ -1,1 +1,1 @@
-const $bottomNav=document.querySelector(".bottom-nav");document.querySelector("main").addEventListener("wheel",function(e){e=e.wheelDelta||-1*e.deltaY;e<-5?$bottomNav.classList.add("hide-nav"):5<e&&$bottomNav.classList.remove("hide-nav")},{passive:!0});
+!function(){const t=document.querySelector(".bottom-nav");let n=0;window.addEventListener("scroll",function(){var e=window.pageYOffset||document.documentElement.scrollTop;e>n?t.classList.add("hide-nav"):t.classList.remove("hide-nav"),n=st<=0?0:e},{passive:!0})}();
