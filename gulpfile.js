@@ -5,6 +5,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const webserver = require("gulp-webserver");
 const sourcemaps = require("gulp-sourcemaps");
+const uglify = require('gulp-uglify');
 
 function localServer() {
     return src("./dist").pipe(
@@ -26,6 +27,7 @@ function css() {
 
 function js() {
     return src('./src/scripts/index.js')
+        .pipe(uglify())
         .pipe(dest('./dist'));
 }
 
