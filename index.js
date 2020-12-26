@@ -1,0 +1,1 @@
+const $bottomNav=document.querySelector(".bottom-nav");document.querySelector("main").addEventListener("wheel",function(e){e=e.wheelDelta||-1*e.deltaY;e<-5?$bottomNav.classList.add("hide-nav"):5<e&&$bottomNav.classList.remove("hide-nav")},{passive:!0});
