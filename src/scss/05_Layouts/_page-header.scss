@@ -32,6 +32,7 @@
 
         .desktop-links {
             .ks-button .button.dark.clear {
+                font-weight: 400;
                 @include font-size(xs);
 
                 @include hover-focus {
