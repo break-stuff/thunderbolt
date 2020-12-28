@@ -25,7 +25,7 @@
         @include transition(transform);
         @include z-index(sub);
 
-        &.hide-nav {
+        &[aria-expanded="false"] {
             transform: translateY(-100%);
             @include transition(transform)
         }

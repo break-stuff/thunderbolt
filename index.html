@@ -37,14 +37,12 @@
                 <a href="/" class="mr-xl text-lg text-primary">Thunderbolt</a>
                 <span class="lg:hide">Premium Quality Tech</span>
             </span>
-            <ks-form class="site-search p-none b-none w-100 lg:hide">
-                <div class="inline-form">
-                    <ks-form-field type="search" placeholder="Search store..." label="search store" class="w-100" hide-label>
-                    </ks-form-field>
-                    <ks-button class="br-l-none" css-class="br-l-none">
-                        <ks-icon icon="search" label="search"></ks-icon>
-                    </ks-button>
-                </div>
+            <ks-form class="site-search p-none b-none bg-transparent w-100 lg:hide" inline>
+                <ks-form-field type="search" placeholder="Search store..." label="search store" size="sm" hide-label>
+                </ks-form-field>
+                <ks-button size="sm">
+                    <ks-icon icon="search" label="search"></ks-icon>
+                </ks-button>
             </ks-form>
             <div class="util-links display-flex align-center py-sm">
                 <span class="desktop-links lg:hide">
@@ -60,7 +58,7 @@
         </div>
 
         <!-- Lower Nav -->
-        <nav class="bottom-nav position-absolute w-100 display-flex justify-center bg-white b-t-xxxs shadow-sm">
+        <nav class="bottom-nav position-absolute w-100 display-flex justify-center bg-white b-t-xxxs shadow-sm" aria-expanded="true">
             <div class="desktop-links sm:hide">
                 <ks-dropdown text="Shop All" color="dark" display="clear" size="sm" mega-menu>
                     <div class="display-flex p-xl">
@@ -111,13 +109,11 @@
             </div>
 
             <div class="mobile-search py-sm px-lg w-100 hide sm:show">
-                <ks-form class="site-search p-none b-none">
-                    <div class="inline-form">
-                        <ks-form-field type="search" placeholder="Search store..." label="search store" class="w-100" hide-label></ks-form-field>
-                        <ks-button class="br-l-none" css-class="br-l-none">
-                            <ks-icon icon="search" label="search"></ks-icon>
-                        </ks-button>
-                    </div>
+                <ks-form class="site-search p-none b-none bg-transparent" inline>
+                    <ks-form-field type="search" placeholder="Search store..." label="search store" size="sm" hide-label></ks-form-field>
+                    <ks-button size="sm">
+                        <ks-icon icon="search" label="search"></ks-icon>
+                    </ks-button>
                 </ks-form>
             </div>    
         </nav>
@@ -298,13 +294,11 @@
             <h2>Subscribe to our newsletter ⚡</h2>
             <p class="w-50 md:w-75 sm:w-100 mx-auto mb-xxl">Enter your email address below to join our mailing list and have our latest
                 news and member-only deals delivered straight to your inbox.</p>
-            <ks-form class="w-50 md:w-75 sm:w-100 mx-auto p-none b-none">
-                <div class="inline-form">
-                    <ks-form-field label="Email" placeholder="Email" type="email" class="w-100" hide-label></ks-form-field>
-                    <ks-button class="br-l-none" css-class="br-l-none">
-                        <ks-icon icon="long_arrow_right" label="sign up"></ks-icon>
-                    </ks-button>
-                </div>
+            <ks-form class="w-50 md:w-75 sm:w-100 mx-auto p-none b-none bg-transparent" inline>
+                <ks-form-field label="Email" placeholder="Email" type="email" class="w-100" hide-label></ks-form-field>
+                <ks-button class="br-l-none" css-class="br-l-none">
+                    <ks-icon icon="long_arrow_right" label="sign up"></ks-icon>
+                </ks-button>
             </ks-form>
         </div>
     </main>
