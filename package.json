@@ -25,6 +25,6 @@
 		"postcss": "^8.2.1"
 	},
 	"dependencies": {
-		"kickstand-ui": "^2.1.1"
+		"kickstand-ui": "^2.2.0"
 	}
 }

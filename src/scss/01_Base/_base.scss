@@ -11,4 +11,9 @@ body {
             @include color(primary);
         }
     }
+
+    .ks-icon {
+        height: 1em;
+        width: 1em;
+    }
 }
