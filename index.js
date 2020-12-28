@@ -1,1 +1,1 @@
-!function(){const n=document.querySelector(".bottom-nav");let t=0;window.addEventListener("scroll",function(){var e=window.pageYOffset||document.documentElement.scrollTop;e>t?n.classList.add("hide-nav"):n.classList.remove("hide-nav"),t=e<=0?0:e},{passive:!0})}();
+!function(){const t=document.querySelector(".bottom-nav");let n=0;window.addEventListener("scroll",function(){var e=window.pageYOffset||document.documentElement.scrollTop;e>n?t.setAttribute("aria-expanded",!1):t.setAttribute("aria-expanded",!0),n=e<=0?0:e},{passive:!0})}();
