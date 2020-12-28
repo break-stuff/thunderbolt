@@ -16,15 +16,3 @@
         display: block;
     }
 }
-
-.products {
-    .ks-card {
-        .card-content {
-            align-items: flex-start;
-
-            @include mq(sm) {
-                align-items: center;
-            }
-        }
-    }
-}

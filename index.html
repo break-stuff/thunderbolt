@@ -128,13 +128,11 @@
                 <a href="#" class="py-md b-b-xxxs">Sign in</a>
                 <a href="#" class="py-md b-b-xxxs">Create Account</a>
                 <a href="#" class="py-md b-b-xxxs">Checkout</a>
-                <ks-form class="site-search p-none b-none">
-                    <div class="inline-form">
-                        <ks-form-field type="search" placeholder="Search store..." label="search store" class="w-100" hide-label></ks-form-field>
-                        <ks-button class="br-l-none" css-class="br-l-none">
-                            <ks-icon icon="search" label="search"></ks-icon>
-                        </ks-button>
-                    </div>
+                <ks-form class="site-search p-none b-none" inline>
+                    <ks-form-field type="search" placeholder="Search store..." label="search store" hide-label></ks-form-field>
+                    <ks-button>
+                        <ks-icon icon="search" label="search"></ks-icon>
+                    </ks-button>
                 </ks-form>
             </div>
         </ks-side-drawer>
@@ -153,7 +151,7 @@
                 <div class="text-uppercase text-xxl sm:text-xl xs:text-lg text-white mb-md">
                     Premium Headphones
                 </div>
-                <ks-button size="lg" class="br-sm" css-class="br-sm">Shop Now</ks-button>
+                <ks-button size="lg" href="https://github.com/break-stuff/thunderbolt" target="_blank"><ks-icon icon="github" class="mr-sm text-lg"></ks-icon> View Source Code</ks-button>
             </ks-card-body>
         </ks-card>
 
@@ -295,8 +293,8 @@
             <p class="w-50 md:w-75 sm:w-100 mx-auto mb-xxl">Enter your email address below to join our mailing list and have our latest
                 news and member-only deals delivered straight to your inbox.</p>
             <ks-form class="w-50 md:w-75 sm:w-100 mx-auto p-none b-none bg-transparent" inline>
-                <ks-form-field label="Email" placeholder="Email" type="email" class="w-100" hide-label></ks-form-field>
-                <ks-button class="br-l-none" css-class="br-l-none">
+                <ks-form-field label="Email" placeholder="Email" type="email" hide-label></ks-form-field>
+                <ks-button>
                     <ks-icon icon="long_arrow_right" label="sign up"></ks-icon>
                 </ks-button>
             </ks-form>
